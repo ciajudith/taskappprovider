@@ -13,10 +13,11 @@ class TaskProviderApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Task Provider App',
-        home: ChangeNotifierProvider(
-          create: (context) => TaskProvider(),
-          child: ToDoListScreen(),
-        ));
+      title: 'Task Provider App',
+      home: ChangeNotifierProvider(
+        create: (context) => TaskProvider(),
+        child: ToDoListScreen(),
+      ),
+    );
   }
 }
